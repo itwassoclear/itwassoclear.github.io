@@ -1,2 +1,2 @@
 # itwassoclear.github.io
-no
+my first project on Yandex.Praktikum

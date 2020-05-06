@@ -35,14 +35,10 @@
                         Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест,
                         но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
                         <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span>
-                        <!-- Можно лучше: span span_accent нейминг класса не соответствует брифу
-                        Блок two-columns, элемент span-accent-->
                          учиться тоже нужно уметь, но почему-то этому мало где учат.</p>
                         <p class="two-columns__paragraph">Что с этим делать? Конкретные техники и упражнения помогают изменить подход к обучению,
                         сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
                     </div>
-                <!-- Можно лучше: two-columns__main-text лечше тег заменить на параграф
-                two-columns__main-text__paragraph лишний класс-->
             </div>
         </section>
 
@@ -88,9 +84,6 @@
             <div class="video__iframes">
                 <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"></iframe>
                 <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"></iframe>
-                <!-- Нужно исправить: div лишняя обертка
-                Добавьте класс напрямую в iframe
-                Удалите все атрибуты из iframe, кроме src-->
             </div>
 
         </section>
@@ -104,9 +97,6 @@
                     командиры. Но для продвижения по службе нужно было сдавать математику. И тогда Барбара придумала свой подход к точным наукам. Оказалось, 
                     если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.</p>
                 </div>
-                <!-- Нужно исправить: удалите two-columns__main-text__paragraph 
-                    У элемента не может быть элементов 
-                    Документация по БЭМ: https://tech.yandex.ru/bem-->
             </div>
         </section>
 
@@ -168,13 +158,10 @@
                     <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» 
                         нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, 
                         карьере и жизни.</blockquote>
-                        <!-- Можно лучше: khan__quote можно реализовать с помощью тега blockquote. Подробнее можно почитать тут: https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote --> 
                     <h4 class="khan__quote-author">Джордж Лукас</h4>
                     <h5 class="khan__quote-author-subline">Кинорежиссер, продюсер</h5>
                     <div class="khan__book-container">
                         <img src="./images/book.jpg" class="khan__book-pic" alt="Салман Хан - Весь мир — школа">
-                        <!-- Надо исправить: Изображение не соответствует брифу. Возможным решением является создание ограничение по высоте для блока-родителя 
-                        изображения, а также использование overflow: hidden http://htmlbook.ru/css/overflow -->
                         <a class="khan__buy-link" target="_blank" href="#">Купить книгу &rarr;</a>
                     </div>
     
@@ -238,8 +225,6 @@
                 <a href="https://nplus1.ru/" class="resources__link" target="_blank"><img src="./images/logo/n1.svg" alt="n1" class="resources__logo"></a>
                 <a href="https://strelka.com/ru" class="resources__link" target="_blank"><img src="./images/logo/strelka.svg" alt="strelka" class="resources__logo"></a>
                 <a href="https://polka.academy/" class="resources__link" target="_blank"><img src="./images/logo/polka.svg" alt="polka" class="resources__logo"></a>
-                <!-- Надо исправить: У каждого HTML-элемента на странице должен быть указан CSS-класс, и для этого класса нужно написать стили в CSS-файле. 
-                Не нужно писать CSS с селектором по целому элементу, это - плохая практика. Добавьте класс для <a>-->
             </div>
         </section>
 
@@ -267,8 +252,6 @@
                 <ul class="footer__social-icons">
 
                     <li class="footer__social-icons-item">
-                        <!-- Можно лучше: У каждого HTML-элемента на странице должен быть указан CSS-класс, и для этого класса нужно написать стили в CSS-файле. 
-                        Не нужно писать CSS с селектором по целому элементу, это - плохая практика. Добавьте класс для <li>-->
                         <a href="https://www.facebook.com/yandex.praktikum/" target="_blank" class="footer__social-links footer__social-links_facebook">
                             <img src="images/facebook_white.svg" alt="Facebook" class="footer__image footer__image_facebook"> Facebook</a>
                     </li>
@@ -292,33 +275,3 @@
 
 </body>
 </html>
-
-
-<!-- В целом по работе: 
-        Хорошо   
-        понятный, хорошо структурированный код
-        страница проходит валидацию 
-        для всех изображений прописан alt
-        стили и картинки в самостоятельных папках
-        классы названы по БЭМ
-        использованы HTML мнемоники
-
-
-    Нужно исправить:
- 
-    - комментарии в index.html
-    - удалите закрывающий тег </p> на 39 линии внутри two-columns__main-text
-    
-     
-    Для получения зачета нужно исправить критичные замечания.
-
-
-    Можно улучшить:
-    
-    - .feinman__background-image должен быть фоном всей секции, а не отдельным элементом. Добавьте background-image в .feinman 
-    - .feinman__link color: #000000 
-    - Удалите стилизацию по тегу (в style.css) 
-    - комментарии в index.html 
-
-    Пожалуйста, не удаляйте комментарии.
--->
