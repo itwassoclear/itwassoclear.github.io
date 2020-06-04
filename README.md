@@ -1,3 +1,15 @@
-my first project on Yandex.Praktikum
+# Научиться учиться
 
-please use https://itwassoclear.github.io/learn-to-learn/ to check it!
+
+## Описание
+
+Одностраничный сайт о современных подходах к обучению.
+
+
+## Что использовалось для разработки
+
+HTML, CSS, BEM
+К элементам добавлена анимация и трансформация.
+
+
+Ознакомиться можно по [ссылке](https://itwassoclear.github.io/learn-to-learn)
